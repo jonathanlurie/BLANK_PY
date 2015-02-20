@@ -15,6 +15,7 @@ License along with this library.
 '''
 
 import os
+from SettingFileReader import *
 
 
 # main
@@ -24,3 +25,9 @@ if __name__ == '__main__':
     os.system('cls' if os.name == 'nt' else 'clear')
 
     print("\n------------------------ BLANK_PY -----------------------------------------\n")
+
+
+    # loading a setting from the setting file
+    settings = SettingFileReader()
+    someSetting = settings.getSetting("group2", "param2")
+    print(someSetting)

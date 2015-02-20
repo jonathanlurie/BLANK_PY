@@ -23,3 +23,6 @@ When your code is in the `src` folder with `main.py`as entry point and your exte
 
 ## Platform
 It was developped on **OSX** but should work without any problem on any **UNIX** platform.
+
+## TODO
+- Adding a `SettingFileReader` adapter for easy setting loading.
