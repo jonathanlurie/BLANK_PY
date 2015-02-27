@@ -40,4 +40,5 @@ Takes two arguments:
 It was developped on **OSX** but should work without any problem on any **UNIX** platform.
 
 ## TODO
-- Adding a `SettingFileReader` adapter for easy setting loading.
+- Adding a smart command line argument interpreter (not in main, but rather another module), with some try/except blocks (because it always looks fancy) **+** makes this compatible with the `setting.ini` file.
+- Adding a text file containing the *help*, accéssible with `-h` or `--help`or just by typing some not-existing arguments
