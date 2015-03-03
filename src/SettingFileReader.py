@@ -54,6 +54,8 @@ class SettingFileReader:
         self._parser.read(self._fileName)
 
 
+
+    # Returns a param value giving its name and groupname
     def getSetting(self, group, name):
 
         settingValue = self._parser.get(group, name)
@@ -65,16 +67,21 @@ class SettingFileReader:
 
             # if interger, cast to integer
             if(settingValue.is_integer()):
-                print "is integer"
                 settingValue = int(settingValue)
             else:
-                print "is float"
+                None
 
         except ValueError as e:
             None
-            print "is string"
-
-
-
 
         return settingValue
+
+
+
+    # update a param value within the setting.ini file.
+    # if the param or group does not exist, it will be created
+    def setSetting(self, group, name, value):
+        self._parser.set(group,name, value)
+
+        with open(self._fileName, 'wb') as configfile:
+            self._parser.write(configfile)

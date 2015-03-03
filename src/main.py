@@ -29,5 +29,8 @@ if __name__ == '__main__':
 
     # loading a setting from the setting file
     settings = SettingFileReader()
-    someSetting = settings.getSetting("group2", "param2")
+    someSetting = settings.getSetting("group2", "param1")
     print(someSetting)
+
+    # you want to update a param in the setting.ini file? no problem
+    settings.setSetting("group2", "param3", "leParam3")
