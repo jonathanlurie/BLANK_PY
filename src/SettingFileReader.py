@@ -76,7 +76,11 @@ class SettingFileReader:
 
         return settingValue
 
-
+    # return an array of all the tuples like (paramName : ParamValue)
+    # present in the group of param
+    def getItems(self, group):
+        return self._parser.items(group)
+        
 
     # update a param value within the setting.ini file.
     # if the param or group does not exist, it will be created
