@@ -41,4 +41,5 @@ It was developped on **OSX** but should work without any problem on any **UNIX**
 
 ## TODO
 - Adding a smart command line argument interpreter (not in main, but rather another module), with some try/except blocks (because it always looks fancy) **+** makes this compatible with the `setting.ini` file.
-- Adding a text file containing the *help*, accéssible with `-h` or `--help`or just by typing some not-existing arguments
+- Adding a text file containing the *help*, accessible with `-h` or `--help`or just by typing some not-existing arguments
+- Adding a `model/view/controller` structure in order to make it easily compatible to a *GUI* development with the minimalist TKinter
