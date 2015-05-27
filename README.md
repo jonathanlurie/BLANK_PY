@@ -8,7 +8,7 @@ It contains several folders and files, among them:
 **Files:**
 
 - `launcher.sh` a double click on it will launch your app, with the entry point in `src/main.py`. It also load  the local  `lib/`folder in `PYTHONPATH`.
-- `src/SettingFileReader.py` for dealing with settings written in the file `settings.ini`
+- `src/SettingFileReader.py` for dealing with settings written in the file `settings/settings.ini`
 - `settings.ini` a config file to be used with the `ConfigParser` module.
 - `README.md` the readme, using markdown syntax.
 
