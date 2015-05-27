@@ -14,12 +14,16 @@ You should have received a copy of the GNU Lesser General Public
 License along with this library.
 '''
 
+import sys
 import os
 from SettingFileReader import *
 
 
 # main
 if __name__ == '__main__':
+
+    # gives priority to local libs
+    sys.path.insert(0, "./lib/python")
 
     # cleaning terminal
     os.system('cls' if os.name == 'nt' else 'clear')
